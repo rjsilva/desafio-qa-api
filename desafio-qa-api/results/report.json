@@ -1,0 +1,63 @@
+[
+  {
+    "uri": "features/specifications/recuperar_posts.feature",
+    "id": "recuperar-todos-os-posts-na-api",
+    "keyword": "Funcionalidade",
+    "name": "recuperar todos os posts na api",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "recuperar-todos-os-posts-na-api;recuperar-posts-na-api",
+        "keyword": "Cenario",
+        "name": "recuperar posts na api",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@GET",
+            "line": 5
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "faco uma requisicao GET/",
+            "line": 7,
+            "match": {
+              "location": "features/steps_definitions/recuperar_posts_steps.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `[]' for nil:NilClass (NoMethodError)\n./features/services/posts_service.rb:8:in `get'\n./features/steps_definitions/recuperar_posts_steps.rb:4:in `\"faco uma requisicao GET/\"'\nfeatures/specifications/recuperar_posts.feature:7:in `Dado faco uma requisicao GET/'",
+              "duration": 894500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "recebo status code 200",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/recuperar_posts_steps.rb:7"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "devo recuperar os posts no formato json",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/recuperar_posts_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
