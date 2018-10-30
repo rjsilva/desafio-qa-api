@@ -10,5 +10,4 @@ end
 
 Entao("devo recuperar os posts no formato json") do
   expect(@response.size).to be > 1
-  #expect(@response.body).to != null
 end
