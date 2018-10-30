@@ -1,7 +1,7 @@
 @@recuperaPosts = PostsService.new
 
 Dado("faco uma requisicao GET\/") do
-  @response = @@recuperaPosts.get
+  @response = @@recuperaPosts.get_request
 end
 
 Entao("devo receber status code {int}") do |code|

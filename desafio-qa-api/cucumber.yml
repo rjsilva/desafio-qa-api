@@ -1,6 +1,6 @@
 ## YAML Templatesss
 ---
-default: -p ci -p html -p hmg
+default: -p ci -p json -p hmg
 
 pretty: --format pretty
 ci:  --format progress

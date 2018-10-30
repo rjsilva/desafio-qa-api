@@ -1,59 +1,60 @@
 [
   {
-    "uri": "features/specifications/recuperar_posts.feature",
+    "uri": "features/specifications/get_posts.feature",
     "id": "recuperar-todos-os-posts-na-api",
     "keyword": "Funcionalidade",
     "name": "recuperar todos os posts na api",
     "description": "",
-    "line": 3,
+    "line": 2,
     "elements": [
       {
         "id": "recuperar-todos-os-posts-na-api;recuperar-posts-na-api",
         "keyword": "Cenario",
         "name": "recuperar posts na api",
         "description": "",
-        "line": 6,
+        "line": 5,
         "type": "scenario",
         "tags": [
           {
             "name": "@GET",
-            "line": 5
+            "line": 4
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
             "name": "faco uma requisicao GET/",
-            "line": 7,
+            "line": 6,
             "match": {
-              "location": "features/steps_definitions/recuperar_posts_steps.rb:3"
+              "location": "features/steps_definitions/get_posts_steps.rb:3"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `[]' for nil:NilClass (NoMethodError)\n./features/services/posts_service.rb:8:in `get'\n./features/steps_definitions/recuperar_posts_steps.rb:4:in `\"faco uma requisicao GET/\"'\nfeatures/specifications/recuperar_posts.feature:7:in `Dado faco uma requisicao GET/'",
-              "duration": 894500
-            }
-          },
-          {
-            "keyword": "Quando ",
-            "name": "recebo status code 200",
-            "line": 8,
-            "match": {
-              "location": "features/steps_definitions/recuperar_posts_steps.rb:7"
-            },
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1071605900
             }
           },
           {
             "keyword": "Entao ",
-            "name": "devo recuperar os posts no formato json",
-            "line": 9,
+            "name": "devo receber status code 200",
+            "line": 7,
             "match": {
-              "location": "features/steps_definitions/recuperar_posts_steps.rb:11"
+              "location": "features/steps_definitions/get_posts_steps.rb:7"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3175700
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "devo recuperar os posts no formato json",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/get_posts_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3667100
             }
           }
         ]
